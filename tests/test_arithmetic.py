@@ -76,3 +76,8 @@ def test_divide_zerodivision_error(x: int | float, y: int | float) -> None:
     """Test ZeroDivision is raised."""
     with pytest.raises(ZeroDivisionError):
         arithmetic.divide(x, y)
+
+def test_divide_zero_division_exception() -> None:
+    """Test that a ZeroDivsionError is raised by the divide() function."""
+    with pytest.raises(ZeroDivisionError):
+        arithmetic.divide(2, 0)
