@@ -80,4 +80,4 @@ def test_divide_zerodivision_error(x: int | float, y: int | float) -> None:
 def test_divide_zero_division_exception() -> None:
     """Test that a ZeroDivsionError is raised by the divide() function."""
     with pytest.raises(ZeroDivisionError):
-        divide(2, 0)
+        arithmetic.divide(2, 0)
